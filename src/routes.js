@@ -7,6 +7,8 @@ const ContatoController = require('./controllers/ContatoController')
 //ROTAS PARA SEREM ACESSADOS OS METODOS DE CONTATO CONTROLLER 
 routes.get('/contatos', ContatoController.index)
 
+routes.get('/contatos/:id', ContatoController.getById)
+
 routes.post('/contatos', ContatoController.create)
 
 routes.put('/contatos/:id', ContatoController.update)
