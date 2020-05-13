@@ -1,14 +1,20 @@
 const knex = require('../database/conexao')
 
 module.exports = {
-
+    //metodo que retorna todos os contatos da tabela
     async index(req, res){
+
     const results = await knex('contatos').orderBy('id')
 
-    return res.json(results)
+        if( !results ){
+            return res.status(204).send()
+        }else{
+            return res.json(results)
+        }
+
     },
 
-
+    //metodo que cria um contato
     async create(req, res, next){
 
         try {
@@ -26,6 +32,7 @@ module.exports = {
         }
     },
 
+    //metodo que atualiza um contato
     async update(req,res,next){
         try {
             const { id } = req.params
@@ -44,21 +51,22 @@ module.exports = {
         }
     },
 
+    //metodo que deleta um contato
     async delete(req,res,next){
 
         try {
             
             const {id} = req.params
-
-            await knex('contatos')
+             await knex('contatos')
             .where({id})
             .del()
 
-            return res.send()
-
+            return res.status(204).send()
+            
         } catch (error) {
             next(error)
         }
 
     }
+
 }
