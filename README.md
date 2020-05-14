@@ -2,20 +2,20 @@
 
 primeiramente precisamos ter este projeto em sua máquina você o conseguirá clonando, então, crie uma pasta em sua máquina local com o nome que desejar.
 
-utilizaremos uma com o nome "clone", certifique-se de cria-lá
+utilizaremos uma com o nome **clone**, certifique-se de cria-lá
 e entrar nela pelo seu CMD, ou ferramenta que preferir, caminhe até a sua pasta criada e execute o comando:
-"git init" e aperte enter
+**git init** e aperte enter
 
 ![](/src/img/gitInit.PNG)
 
 
-assim você poderá clonar o repositório com o comando: "git clone https://github.com/vitor7001/Desafio_Backend.git" e apertando Enter em seguida
+assim você poderá clonar o repositório com o comando: **git clone https://github.com/vitor7001/Desafio_Backend.git** e apertando Enter em seguida
 
 ![](/src/img/gitClone.PNG)
 
 espere a clonagem terminar e prosseguiremos!
 
-agora temos a pasta chamada "Desafio_Backend" crriada por conta da clonagem
+agora temos a pasta chamada **Desafio_Backend** criada por conta da clonagem
 
 ![](/src/img/criacaoPasta.PNG)
 
@@ -24,7 +24,7 @@ entre na mesma pelo CMD.
 
 agora devemos instalar as bibliotecas que o projeto utiliza para seu funcionamento
 
-utilize o comando "npm install" e aguarde o download das dependências do projeto
+utilize o comando **npm install** e aguarde o download das dependências do projeto
 
 ![](/src/img/npmInstall.PNG)
 
@@ -73,13 +73,23 @@ teremos então uma mensagem no console informando o sucesso da execução
 
 poderemos então partir para o postman e testar nossos métodos.
 
-na interface do postman clique em Import e seleciona a opção Link
-copie este link: https://www.getpostman.com/collections/7c3ca825b57dadf2da4f
-e cole na caixa e clique em continue.
+na interface do postman clique em Import 
+
+![](/src/img/postImport.PNG)
+
+e seleciona a opção Link e cole o seguinte caminho: https://www.getpostman.com/collections/7c3ca825b57dadf2da4f e em seguida clique em _continue_
+
+![](/src/img/postUrl.PNG)
 
 será criada uma caixa com nossos métodos para serem utilizados
+
+![](/src/img/postCaixa.PNG)
 
 temos o básico de um crud: Buscar Todos os Contatos, Buscar um Contato pelo Id,
 Criar Contato, Atualizar um Contato e Deletar um Contato Pelo Id
 
+![](/src/img/postMetodos.PNG)
+
 basta abrir o método que desejar e executá-lo, a resposta para suas requisições o próprio postman irá exibir
+
+![](/src/img/postCriar.PNG)
