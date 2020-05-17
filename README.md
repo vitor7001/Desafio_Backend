@@ -53,7 +53,7 @@ para nossa tabela iremos utilizar um arquivos que se encontra no projeto o nome 
 que é: 
 
 ```
-npm knex migrate:latest
+npx knex migrate:latest
 ```
 
 ![](/src/img/migrate.PNG)
@@ -77,7 +77,7 @@ na interface do postman clique em Import
 
 ![](/src/img/postImport.PNG)
 
-e seleciona a opção Link e cole o seguinte caminho: https://www.getpostman.com/collections/7c3ca825b57dadf2da4f e em seguida clique em _continue_
+e seleciona a opção Link e cole o seguinte caminho: https://www.getpostman.com/collections/75684f4b0adaf0c77a55 e em seguida clique em _continue_
 
 ![](/src/img/postUrl.PNG)
 

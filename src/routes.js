@@ -9,7 +9,17 @@ routes.get('/contatos', ContatoController.index)
 
 routes.get('/contatos/:id', ContatoController.getById)
 
-routes.post('/contatos', ContatoController.create)
+routes.post('/contatos', (req,res,next) =>{
+
+    if(!req.body.nome || typeof req.body.nome == undefined || req.body.nome == null){
+        console.log('Erro no nome')
+        const error = new Error('Propriedade Nome inválido e/ou não preenchido')
+        error.status = 400
+        next(error)
+    }else{
+        ContatoController.create(req,res,next)
+    }
+})
 
 routes.put('/contatos/:id', ContatoController.update)
 
